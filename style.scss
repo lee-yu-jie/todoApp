@@ -1,0 +1,101 @@
+main{
+  background-image: linear-gradient(to left top, rgb(249, 212, 119),rgb(254, 166, 52));
+  min-height: 100vh;
+  padding-top: 100px;
+}
+.todo-app {
+  background-color: rgb(3, 47, 60);
+  margin:auto;
+  width: 50%;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 30px 10px rgb(32, 32, 32);
+  h1 {
+    font-size: 60px;
+    margin: 10px 0;
+    color:white;
+    font-weight: 500;
+    text-shadow: 0 0 4px rgba(255, 255, 255);
+  }
+}
+.taskForm {
+  display: flex;
+  #taskInput {
+    padding: 10px 10px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    flex-grow: 1;
+    border-radius: 20px;
+    margin-right: 10px;
+    background: #000;
+    color: white;
+  }
+  #addBtn {
+    padding: 15px 20px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    border: 1px solid gray;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(255, 168, 7);
+    color: white;
+    .fa-paper-plane{
+      animation: shaking 3s infinite;
+      font-size: 1.2em;
+    }
+  }
+}
+.todo-list {
+  overflow-y: scroll;
+  height: 350px;
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    font-weight: 200;
+    transition: 0.5s;
+    .item {
+      font-size: 1.5em;
+      color: white;
+    }
+    .closeBtn {
+      background:rgb(3, 47, 60);
+      border: 1px dashed darkgray;
+      border-radius: 2px;
+      cursor: pointer;
+      opacity: 0;
+      transition: 1s;
+      i{
+        font-size: 1.3em;
+        padding: 6px 8px;
+        color:rgb(26, 116, 211);
+      }
+      i:hover {
+        color: red;
+        transition: .5s;
+      }
+    }
+  }
+  .todo-item:hover .closeBtn{
+    opacity: 1;
+  }
+}
+.fall{
+  transform: translateY(3em) rotate(20deg);
+  opacity: 0;
+}
+
+@keyframes shaking {
+  0%{transform: rotate(20deg)}
+  25%{transform: rotate(-15deg)}
+  50%{transform: rotate(15deg)}
+  75%{transform: rotate(-15deg)}
+  100%{transform: rotate(20deg)}
+}
+
+

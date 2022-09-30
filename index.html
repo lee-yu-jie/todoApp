@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>代辦事項todo list</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <script src="https://kit.fontawesome.com/4b775a86e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    <div class="todo-app">
+      <h1>TODO LIST</h1>
+      <form class="taskForm">
+        <input type="text" id="taskInput" placeholder="該做什麼呢">
+        <button type="submit" id="addBtn"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+      <section>
+        <ul class="todo-list">
+          <li class="todo-item">
+            <span class="item">代辦事項</span>
+            <button class="closeBtn"><i class="fa-solid fa-trash"></i></button>
+          </li>  
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
