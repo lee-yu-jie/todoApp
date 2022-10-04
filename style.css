@@ -65,6 +65,10 @@ main {
   font-weight: 200;
   transition: 1s;
 }
+.todo-list .todo-item .checkbox {
+  transform: scale(2);
+  margin: 0px 10px;
+}
 .todo-list .todo-item .item {
   font-size: 1.5em;
   color: white;

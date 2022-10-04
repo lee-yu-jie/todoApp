@@ -59,6 +59,10 @@ main{
     border: 1px solid lightgray;
     font-weight: 200;
     transition: 1s;
+    .checkbox{
+      transform : scale(2);
+      margin: 0px 10px;
+    }
     .item {
       font-size: 1.5em;
       color: white;
